@@ -1,73 +1,63 @@
-/* Basic reset to ensure consistent spacing */
-body, h1, p, ul, li, img, header, footer, div {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
+/* General Body Styling */
 body {
-    font-family: sans-serif; /* Default sans-serif font */
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text */
+    font-family: Arial, sans-serif; /* Default font for the page */
+    margin: 0;                     /* Removes default browser margin */
+    padding: 20px;                 /* Adds some space around the content */
+    background-color: #f4f4f4;     /* Light grey background */
+    color: #333;                   /* Default text color */
+    line-height: 1.6;              /* Improves readability */
 }
 
-header {
-    background-color: #333; /* Dark background for header */
-    color: #fff; /* White text in header */
-    padding: 1em 0;
-    text-align: center;
+/* --- Selector Examples --- */
+
+/* 1. ID Selector (#) - Targets a single, unique element */
+#main-heading {
+    color: #0056b3;                /* Specific blue color for the main heading */
+    text-align: center;            /* Centers the heading text */
+    font-family: 'Georgia', serif; /* Uses a different font for the heading */
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+/* 2. Class Selector (.) - Targets one or more elements with the specified class */
+.content-section {
+    background-color: #ffffff;     /* White background for this section */
+    padding: 15px;                 /* Internal spacing */
+    margin-bottom: 20px;           /* Space below this section */
+    border: 1px solid #cccccc;     /* Light grey border */
+    border-radius: 5px;            /* Slightly rounded corners */
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto; /* Top and bottom margin of 20px, auto for horizontal centering */
-    padding: 20px;
-    background-color: #fff; /* White background for the container */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Slightly rounded corners */
+.highlight {
+    font-weight: bold;             /* Makes text bold */
+    color: #d9534f;                /* A contrasting red color */
 }
 
-.intro {
-    font-style: italic; /* Italicize the intro paragraph */
-    color: #555; /* Medium gray color */
-    margin-bottom: 15px;
+/* 3. Element Selector - Targets all elements of a specific type (e.g., all <p> tags) */
+p {
+    margin-bottom: 10px;           /* Adds space below paragraphs */
 }
 
-#main-image {
-    display: block; /* Make the image a block-level element */
-    margin: 10px auto; /* Top and bottom margin of 10px, auto for horizontal centering */
-    border: 2px solid #007bff; /* Blue border around the image */
-    border-radius: 5px;
-    max-width: 100%; /* Ensure image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
+h2 {
+    color: #337ab7;                /* A lighter blue for subheadings */
+    border-bottom: 2px solid #eeeeee; /* Underline effect for subheadings */
+    padding-bottom: 5px;           /* Spaces between text and underline */
 }
 
-.list-item {
-    font-weight: bold; /* Make the list items bold */
-    color: #007bff; /* Blue color for list items with this class */
-    margin-bottom: 5px;
-    padding-left: 15px; /* Add some left padding for indentation */
+/* --- Image Styling --- */
+.styled-image {
+    display: block;                /* Makes the image a block element */
+    max-width: 100%;             /* Makes image responsive (won't exceed container width) */
+    height: auto;                  /* Maintains aspect ratio */
+    margin: 15px auto;             /* Adds space above/below and center horizontally */
+    border: 3px solid #0056b3;     /* Blue border around the image */
+    padding: 5px;                  /* Space between image and its border */
+    background-color: #ffffff;     /* White background behind the padding */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Subtle shadow effect */
 }
 
-ul {
-    list-style-type: square; /* Use square bullets for the list */
-    padding-left: 20px;
-}
-
+/* --- Footer Styling --- */
 footer {
     text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
+    margin-top: 30px;
     font-size: 0.9em;
-    margin-top: 20px;
+    color: #777777;                /* Grey color for footer text */
 }
